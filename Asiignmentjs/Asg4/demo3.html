@@ -1,0 +1,33 @@
+<html><head></head>
+   
+    
+    
+  <body>
+    <form name="f1">
+   
+    <input type="button" value="Add" name="but1" onClick="dispMsg()">
+    <input type="button" value="Close" name="but2" onClick="closeWin()">
+    </form>
+
+
+    <script language="JavaScript"> 
+    function dispMsg()
+        {
+        /* Comments : Using prompt dialog box data can be accepted through data entry field from the user */
+        
+        num1=parseInt(prompt("enter the first number","0"));
+        
+        /* Comments : parseInt method used to convert string to a numeric value */
+        
+        num2=parseInt(prompt("enter the second number")); alert("Sum is \n"+(num1+num2));
+        }
+        function closeWin()
+        {
+        /* Comments : confirm dialog box used to get user confirmation about closing the window or not */
+        
+        res=confirm("do you want to close the window?"); if(res==true) window.close();
+        }
+        </script>
+        
+        
+    </body></html>
